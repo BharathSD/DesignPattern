@@ -18,5 +18,19 @@
     <ClCompile Include="BuilderMain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HTMLElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HTMLBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HTMLElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HTMLBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

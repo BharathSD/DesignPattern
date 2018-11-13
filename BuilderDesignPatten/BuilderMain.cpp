@@ -1,19 +1,21 @@
 #include <iostream>
-#include <string>
+#include "HTMLBuilder.h"
 using namespace std;
 
-class main
-{
-	string m_name;
-
-
-public:
-	explicit main(const string& name)
-		: m_name(name)
-	{
-	}
-};
 int main()
 {
+	CHTMLBuilder builder("ul");
+	builder.add_child("li", "Hello");
+	builder.add_child("li", "World");
+
+	cout << builder.str() << endl;
+
+	cout << "Fluent Builder Types:" << endl;
+	CHTMLBuilder builder1("ul");
+	builder1.add_child("li", "Hello").add_child("li", "World");
+
+	cout << builder1.str() << endl;
+
+	system("pause");
 	return EXIT_SUCCESS;
 }

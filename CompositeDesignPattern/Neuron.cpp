@@ -2,7 +2,7 @@
 
 Neuron::Neuron()
 {
-    static int id{1};
+    unsigned static int id{1};
     this->id = id++;
 }
 
